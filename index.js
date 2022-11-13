@@ -3,12 +3,11 @@ const steamTotp = require('steam-totp');
 const keep_alive = require('./keep_alive.js')
 
 var username = '';
-var password = '';
-var shared_secret = '';
+var password = process.env.password;
+var shared_secret = process.env.shared;
 
-var games = [730, 440, 570];  // Digite aqui os AppIDs dos jogos que você deseja
-var status = 1;  // 1 - online, 7 - invisível
-
+var games = [730, 440, 570];  // Digite aqui os AppIDs dos jogos que você deseja.
+var status = 1;               // 1 - online, 7 - invisível
 
 user = new steamUser();
 user.logOn({"accountName": username, "password": password, "twoFactorCode": steamTotp.generateAuthCode(shared_secret)});
