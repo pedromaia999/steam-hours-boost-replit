@@ -1,4 +1,4 @@
-# farm-de-horas-steam-replit-simples
+# steam-hours-boost
 Farm de horas em jogos Steam 24/7 utilizando Replit (versão simples)
 
 Para concluir a instalação sem erro, recomendo assistir ao tutorial no YouTube, link abaixo.
