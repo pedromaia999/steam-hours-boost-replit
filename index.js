@@ -2,7 +2,7 @@ const steamUser = require('steam-user');
 const steamTotp = require('steam-totp');
 const keep_alive = require('./keep_alive.js')
 
-var username = '';
+var username = 'bratu93';
 var password = process.env.password;
 var shared_secret = process.env.shared;
 
